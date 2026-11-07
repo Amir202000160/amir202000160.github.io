@@ -43,6 +43,9 @@ h2::after{content:"";flex:1;height:1px;background:var(--border)}
 .card:hover{transform:translateY(-4px);border-color:var(--accent)}
 .card h3{margin-bottom:6px;font-size:1.15rem}
 .card p{color:var(--muted);font-size:.95rem}
+a.card{display:block;color:inherit}
+.play{display:inline-block;margin-top:14px;color:var(--accent2);font-weight:600;font-size:.9rem}
+.card:hover .play{text-decoration:underline}
 .thumb{height:150px;border-radius:10px;margin-bottom:16px;display:flex;align-items:center;justify-content:center;font-size:2.6rem;background:linear-gradient(135deg,var(--surface2),#10131c);border:1px dashed var(--border)}
 .meta{font-size:.8rem;color:var(--accent2);margin-bottom:10px;display:block}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
@@ -115,41 +118,41 @@ footer{padding:28px 0;text-align:center;color:var(--muted);font-size:.85rem;bord
 <section id="projects"><div class="wrap">
   <h2>Projects</h2>
   <div class="grid">
-    <article class="card featured">
+    <a class="card featured" href="https://amir-160.itch.io/the-vr-museum-guide" target="_blank" rel="noopener" aria-label="Play VR Museum Guide on itch.io">
       <div class="thumb">🥽</div>
       <span class="meta">Nov 2025 · VR</span>
       <h3>VR Museum Guide</h3>
       <p>An interactive virtual reality experience that turns static historical exhibits into dynamic, hands-on digital exploration.</p>
       <div class="chips"><span class="chip">Unity</span><span class="chip">C#</span><span class="chip">VR</span></div>
-    </article>
-    <article class="card">
+    <span class="play">Play on itch.io &rarr;</span></a>
+    <a class="card" href="https://amir-160.itch.io" target="_blank" rel="noopener" aria-label="Play Shooting Game on itch.io">
       <div class="thumb">🔫</div>
       <span class="meta">Nov 2024 · 3D</span>
       <h3>Shooting Game</h3>
       <p>A third-person shooter game that I developed in Unity.</p>
       <div class="chips"><span class="chip">Unity</span><span class="chip">C#</span><span class="chip">3D</span></div>
-    </article>
-    <article class="card">
+    <span class="play">Play on itch.io &rarr;</span></a>
+    <a class="card" href="https://amir-160.itch.io/fruit-catcher" target="_blank" rel="noopener" aria-label="Play Fruit Catcher on itch.io">
       <div class="thumb">🍎</div>
       <span class="meta">Oct 2024 · 2D</span>
       <h3>Fruit Catcher</h3>
       <p>Catch as many fruits as you can without being hit by the falling bombs.</p>
       <div class="chips"><span class="chip">Unity</span><span class="chip">C#</span><span class="chip">2D</span></div>
-    </article>
-    <article class="card">
+    <span class="play">Play on itch.io &rarr;</span></a>
+    <a class="card" href="https://amir-160.itch.io/clicky-ninja" target="_blank" rel="noopener" aria-label="Play Clicky Ninja on itch.io">
       <div class="thumb">🥷</div>
       <span class="meta">Jul 2024 · 2D · First release</span>
       <h3>Clicky Ninja</h3>
       <p>My first released game. Dodge the evil skulls, blow up the boxes and don't let them drop.</p>
       <div class="chips"><span class="chip">Unity</span><span class="chip">C#</span></div>
-    </article>
-    <article class="card">
+    <span class="play">Play on itch.io &rarr;</span></a>
+    <a class="card" href="https://amir-160.itch.io/the-hero-game" target="_blank" rel="noopener" aria-label="Play The Hero on itch.io">
       <div class="thumb">⚔️</div>
       <span class="meta">Jul 2023 · 3D · Academic</span>
       <h3>The Hero</h3>
       <p>A 3D academic project about a hero who fights the evil that rose from the dead.</p>
       <div class="chips"><span class="chip">Unity</span><span class="chip">C#</span><span class="chip">3D</span></div>
-    </article>
+    <span class="play">Play on itch.io &rarr;</span></a>
   </div>
   <p style="color:var(--muted);margin-top:22px;font-size:.9rem">More on <a href="https://github.com/Amir202000160" target="_blank" rel="noopener" style="color:var(--accent2)">GitHub</a>.</p>
 </div></section>
