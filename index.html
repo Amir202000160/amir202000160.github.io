@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amir Samir Fawzy | Unity & XR Developer</title>
+<meta name="description" content="Portfolio of Amir Samir Fawzy, Unity / Game / XR developer based in Giza, Egypt.">
+<style>
+:root{
+  --bg:#0b0d12; --surface:#141822; --surface2:#1b2030; --text:#e8ebf2; --muted:#9aa3b5;
+  --accent:#7c5cff; --accent2:#00e0b8; --border:#262c3d;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:10;background:rgba(11,13,18,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+.logo{font-weight:800;letter-spacing:.5px}
+.logo span{color:var(--accent2)}
+nav ul{display:flex;gap:22px;list-style:none;font-size:.92rem;color:var(--muted)}
+nav ul a:hover{color:var(--text)}
+.hero{padding:96px 0 72px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;width:520px;height:520px;right:-120px;top:-120px;background:radial-gradient(circle,rgba(124,92,255,.35),transparent 65%);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1fr auto;gap:48px;align-items:center;position:relative}
+.avatar{width:280px;height:280px;border-radius:50%;object-fit:cover;object-position:center 20%;border:4px solid var(--accent);box-shadow:0 0 0 8px rgba(124,92,255,.15),0 20px 60px rgba(124,92,255,.35)}
+@media(max-width:760px){.hero-grid{grid-template-columns:1fr}.avatar{order:-1;width:180px;height:180px}}
+.tag{display:inline-block;font-size:.8rem;color:var(--accent2);border:1px solid var(--accent2);padding:4px 12px;border-radius:99px;margin-bottom:20px}
+h1{font-size:clamp(2.4rem,6vw,4.2rem);line-height:1.1;margin-bottom:16px}
+h1 em{font-style:normal;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:620px;color:var(--muted);font-size:1.08rem;margin-bottom:30px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:12px 24px;border-radius:10px;font-weight:600;border:1px solid var(--border);transition:.2s}
+.btn.primary{background:var(--accent);border-color:var(--accent)}
+.btn.primary:hover{background:#6a49f0;transform:translateY(-2px)}
+.btn:not(.primary):hover{border-color:var(--accent2);color:var(--accent2)}
+section{padding:72px 0}
+h2{font-size:1.8rem;margin-bottom:34px;display:flex;align-items:center;gap:14px}
+h2::after{content:"";flex:1;height:1px;background:var(--border)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:24px;transition:.25s}
+.card:hover{transform:translateY(-4px);border-color:var(--accent)}
+.card h3{margin-bottom:6px;font-size:1.15rem}
+.card p{color:var(--muted);font-size:.95rem}
+.thumb{height:150px;border-radius:10px;margin-bottom:16px;display:flex;align-items:center;justify-content:center;font-size:2.6rem;background:linear-gradient(135deg,var(--surface2),#10131c);border:1px dashed var(--border)}
+.meta{font-size:.8rem;color:var(--accent2);margin-bottom:10px;display:block}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.chip{font-size:.75rem;background:var(--surface2);padding:3px 10px;border-radius:99px;color:var(--muted)}
+.featured{border-color:var(--accent);background:linear-gradient(160deg,#1a1535,var(--surface))}
+.timeline{border-left:2px solid var(--border);padding-left:26px;display:grid;gap:30px}
+.item{position:relative}
+.item::before{content:"";position:absolute;left:-34px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--bg)}
+.item h3{font-size:1.08rem}
+.item .where{color:var(--accent2);font-size:.9rem}
+.item .when{color:var(--muted);font-size:.82rem}
+.item p{color:var(--muted);margin-top:6px;font-size:.95rem}
+.skills{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:20px}
+.about{display:grid;grid-template-columns:1.4fr 1fr;gap:34px}
+.about p{color:var(--muted);margin-bottom:14px}
+.facts{list-style:none;display:grid;gap:12px}
+.facts li{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px 18px;font-size:.93rem}
+.facts b{display:block;color:var(--accent2);font-size:.75rem;text-transform:uppercase;letter-spacing:1px}
+.contact{text-align:center}
+.contact p{color:var(--muted);max-width:520px;margin:0 auto 26px}
+.contact .btns{justify-content:center}
+footer{padding:28px 0;text-align:center;color:var(--muted);font-size:.85rem;border-top:1px solid var(--border)}
+@media(max-width:760px){nav ul{display:none}.about{grid-template-columns:1fr}.hero{padding:64px 0 48px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a href="#top" class="logo">Amir<span>.</span>dev</a>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap hero-grid">
+  <div>
+  <span class="tag">Open to opportunities</span>
+  <h1>Hi, I'm <em>Amir Samir Fawzy</em><br>Unity &amp; XR Developer</h1>
+  <p>I build games and immersive VR, AR and MR experiences with Unity and C#. I also teach game development and design interfaces in Figma.</p>
+  <div class="btns">
+    <a class="btn primary" href="#projects">View my work</a>
+    <a class="btn" href="https://github.com/Amir202000160" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://www.linkedin.com/in/amir-samir-92309a242/" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn" href="amirCV.pdf" download>Download CV</a>
+  </div>
+  </div>
+  <img class="avatar" src="profile.jpg" alt="Portrait of Amir Samir Fawzy">
+</div></header>
+
+<section id="about"><div class="wrap">
+  <h2>About me</h2>
+  <div class="about">
+    <div>
+      <p>I'm a computer science graduate from the Faculty of Computer Science and Artificial Intelligence, Helwan University, with hands-on experience in game and XR development (VR, AR and MR) using Unity and C#.</p>
+      <p>I currently build educational VR experiments at Ekson Technology and assist teaching Unity and C# at the Digital Egypt Initiative (DEPI). Before that I instructed game development at Neuronetix.</p>
+      <p>I'm also comfortable with front-end web development in React and have a keen interest in UI/UX design.</p>
+    </div>
+    <ul class="facts">
+      <li><b>Location</b>Giza, Egypt</li>
+      <li><b>Education</b>B.Sc. Computer Science &amp; AI, Helwan University (2021–2024)</li>
+      <li><b>Languages</b>Arabic (native), English (proficient)</li>
+      <li><b>Certificates</b>Unity Junior Programmer · Unity Essentials · Autodesk 3ds Max Essentials</li>
+    </ul>
+  </div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <h2>Projects</h2>
+  <div class="grid">
+    <article class="card featured">
+      <div class="thumb">🥽</div>
+      <span class="meta">Nov 2025 · VR</span>
+      <h3>VR Museum Guide</h3>
+      <p>An interactive virtual reality experience that turns static historical exhibits into dynamic, hands-on digital exploration.</p>
+      <div class="chips"><span class="chip">Unity</span><span class="chip">C#</span><span class="chip">VR</span></div>
+    </article>
+    <article class="card">
+      <div class="thumb">🔫</div>
+      <span class="meta">Nov 2024 · 3D</span>
+      <h3>Shooting Game</h3>
+      <p>A third-person shooter game that I developed in Unity.</p>
+      <div class="chips"><span class="chip">Unity</span><span class="chip">C#</span><span class="chip">3D</span></div>
+    </article>
+    <article class="card">
+      <div class="thumb">🍎</div>
+      <span class="meta">Oct 2024 · 2D</span>
+      <h3>Fruit Catcher</h3>
+      <p>Catch as many fruits as you can without being hit by the falling bombs.</p>
+      <div class="chips"><span class="chip">Unity</span><span class="chip">C#</span><span class="chip">2D</span></div>
+    </article>
+    <article class="card">
+      <div class="thumb">🥷</div>
+      <span class="meta">Jul 2024 · 2D · First release</span>
+      <h3>Clicky Ninja</h3>
+      <p>My first released game. Dodge the evil skulls, blow up the boxes and don't let them drop.</p>
+      <div class="chips"><span class="chip">Unity</span><span class="chip">C#</span></div>
+    </article>
+    <article class="card">
+      <div class="thumb">⚔️</div>
+      <span class="meta">Jul 2023 · 3D · Academic</span>
+      <h3>The Hero</h3>
+      <p>A 3D academic project about a hero who fights the evil that rose from the dead.</p>
+      <div class="chips"><span class="chip">Unity</span><span class="chip">C#</span><span class="chip">3D</span></div>
+    </article>
+  </div>
+  <p style="color:var(--muted);margin-top:22px;font-size:.9rem">More on <a href="https://github.com/Amir202000160" target="_blank" rel="noopener" style="color:var(--accent2)">GitHub</a>.</p>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <h2>Experience</h2>
+  <div class="timeline">
+    <div class="item"><h3>Teaching Assistant</h3><div class="where">DEPI · Digital Egypt Initiative, Cairo</div><div class="when">Sep 2025 – Present</div><p>Teaching assistance in Unity and C# (3D, 2D, VR, AR) for the Ministry of Communications and Information Technology.</p></div>
+    <div class="item"><h3>Unity Developer</h3><div class="where">Ekson Technology · Cairo</div><div class="when">Jul 2025 – Present</div><p>Making educational VR experiments using Unity and C#.</p></div>
+    <div class="item"><h3>Game Development Instructor</h3><div class="where">Neuronetix · Cairo</div><div class="when">Jun 2024 – Mar 2025</div><p>Instructed game development using Unity and C#.</p></div>
+    <div class="item"><h3>ITI Intensive Code Camp (XR)</h3><div class="where">ITI · New Capital</div><div class="when">Mar 2025 – Jun 2025</div><p>Four-month intensive training in Unity and C# for XR (VR and AR).</p></div>
+    <div class="item"><h3>Unity Developer Trainee</h3><div class="where">QSIT · Cairo</div><div class="when">Mar 2025 – May 2025</div><p>Game developer internship using Unity and C#.</p></div>
+    <div class="item"><h3>Game Developer Intern</h3><div class="where">Gmind · Alexandria</div><div class="when">Jul 2023 – Oct 2023</div><p>Game developer internship using Unity and C#.</p></div>
+    <div class="item"><h3>UI/UX Designer Intern</h3><div class="where">MYM · Cairo</div><div class="when">Jul 2023 – Sep 2023</div><p>UI/UX design internship using Figma.</p></div>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="card"><h3>Game &amp; XR</h3><div class="chips"><span class="chip">Unity</span><span class="chip">C#</span><span class="chip">VR / AR / MR</span><span class="chip">Meta SDK</span><span class="chip">Object Pool</span><span class="chip">Singleton</span><span class="chip">State pattern</span></div></div>
+    <div class="card"><h3>Programming</h3><div class="chips"><span class="chip">C#</span><span class="chip">C++</span><span class="chip">JavaScript</span><span class="chip">OOP</span><span class="chip">SOLID</span><span class="chip">Git</span><span class="chip">Agile</span></div></div>
+    <div class="card"><h3>Web &amp; Design</h3><div class="chips"><span class="chip">React</span><span class="chip">Figma</span><span class="chip">UI/UX</span></div></div>
+    <div class="card"><h3>3D</h3><div class="chips"><span class="chip">Blender</span><span class="chip">3ds Max</span></div></div>
+    <div class="card"><h3>Soft skills</h3><div class="chips"><span class="chip">Leadership</span><span class="chip">Communication</span><span class="chip">Teaching</span><span class="chip">Word / PowerPoint / Excel</span></div></div>
+  </div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+  <h2>Get in touch</h2>
+  <p>Looking for a Unity or XR developer? Let's talk.</p>
+  <div class="btns">
+    <a class="btn primary" href="mailto:amirsamir225@gmail.com">amirsamir225@gmail.com</a>
+    <a class="btn" href="https://github.com/Amir202000160" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://www.linkedin.com/in/amir-samir-92309a242/" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</div></section>
+
+<footer>© 2026 Amir Samir Fawzy</footer>
+</body>
+</html>
